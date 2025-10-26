@@ -1,0 +1,49 @@
+{
+  "companies": [
+    {
+      "id": "c1",
+      "name": "Company A",
+      "accounts": [
+        {
+          "id": "c1-a1",
+          "name": "Account 1",
+          "balance": 21337,
+          "transactions": [
+            { "date": "07/05/2024 01:04 PM", "credit": 21337, "balance": 21337, "utr": "1000000", "acc_or_upi": "AC0CF7RRUY407QHU" },
+            { "date": "04/05/2024 12:38 PM", "credit": 21337, "balance": 21337, "utr": "CMS4136431811", "acc_or_upi": "0104SLNEFTPL" }
+          ]
+        },
+        {
+          "id": "c1-a2",
+          "name": "Account 2",
+          "balance": 5015.69,
+          "transactions": [
+            { "date": "28/03/2024 05:09 PM", "credit": 5015.69, "balance": 5015.69, "utr": "CMS3956666735", "acc_or_upi": "AC0CF7RRUY407QHU" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Company B",
+      "accounts": [
+        {
+          "id": "c2-a1",
+          "name": "Account 1",
+          "balance": 125000.5,
+          "transactions": [
+            { "date": "10/10/2024 09:00 AM", "credit": 50000, "balance": 125000.5, "utr": "BETA1001", "acc_or_upi": "UPI: beta@upi" }
+          ]
+        },
+        {
+          "id": "c2-a2",
+          "name": "Account 2",
+          "balance": 95015.69,
+          "transactions": [
+            { "date": "8/03/2025 08:09 PM", "credit": 3015.69, "balance": 3015.69, "utr": "VMW3956666735", "acc_or_upi": "AC0CF7RRUY407QHU" }
+          ]
+        }
+      ]
+    }
+  ]
+}

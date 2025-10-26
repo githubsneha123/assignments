@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- LOGIN AREA -->
+    <div id="loginSection" class="card login-card">
+      <h2>Login</h2>
+      <input type="email" id="email" placeholder="Enter your email" />
+      <button id="loginBtn">Login</button>
+    </div>
+
+    <!-- DASHBOARD AREA -->
+    <div id="dashboard" class="card dashboard-card" style="display:none;">
+      <div class="dashboard-header">
+        <h2 id="userTitle">Stock Dashboard</h2>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+      </div>
+
+      <div class="stock-select-area">
+        <label for="stockSelect" class="stock-label">Select Stock to Subscribe:</label>
+        <div class="dropdown-wrapper">
+          <select id="stockSelect">
+            <option value="">-- Choose a Stock --</option>
+            <option value="GOOG">GOOG</option>
+            <option value="TSLA">TSLA</option>
+            <option value="AMZN">AMZN</option>
+            <option value="META">META</option>
+            <option value="NVDA">NVDA</option>
+          </select>
+        </div>
+        <button id="subscribeBtn" class="cta">Subscribe</button>
+      </div>
+
+      <div id="stocks" class="stocks-container"></div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

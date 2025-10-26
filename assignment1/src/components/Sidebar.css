@@ -1,0 +1,41 @@
+/* Sidebar Logo */
+.logo {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  align-items: center;
+}
+
+/* Orange square with white play inside */
+.logo-mark .play-btn {
+  background-color: orange;
+  color: white;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; /* slight border radius */
+  font-size: 16px;
+}
+
+/* Logo text */
+.logo-text {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Optional: Sidebar styling */
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+}
+
+.sidebar-items li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar-items li:hover {
+  background-color: #f0f0f0;
+}
