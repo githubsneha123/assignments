@@ -19,7 +19,7 @@ This project is a Stock Broker Client Web Dashboard. Users can log in with their
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/<username>/assignments.git
+git clone https://github.com/githubsneha123/assignments.git
 2. Navigate to Assignment 2 folder:
 cd assignments/assignment2
 3. Install dependencies
