@@ -8,7 +8,7 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 const SUPPORTED_STOCKS = ["GOOG", "TSLA", "AMZN", "META", "NVDA"];
-let userSubscriptions = {}; // { socket.id: ['GOOG', 'TSLA'] }
+let userSubscriptions = {};
 
 app.use(express.static(path.join(__dirname, "../client")));
 
@@ -16,7 +16,6 @@ function randomPrice() {
   return (Math.random() * 1000 + 100).toFixed(2);
 }
 
-// Send stock price updates every second
 setInterval(() => {
   const prices = {};
   SUPPORTED_STOCKS.forEach(stock => (prices[stock] = randomPrice()));

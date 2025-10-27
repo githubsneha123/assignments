@@ -13,8 +13,9 @@ const userTitle = document.getElementById('userTitle');
 let subscribedStocks = [];
 
 loginBtn.onclick = () => {
-  if (emailInput.value) {
-    userTitle.innerText = `Welcome, ${emailInput.value}`;
+  const email = emailInput.value.trim();
+  if (email) {
+    userTitle.innerText = `Welcome, ${email}`;
     dashboard.style.display = 'flex';
     loginSection.style.display = 'none';
   }
@@ -49,6 +50,8 @@ socket.on('subscribed', (stocks) => {
 socket.on('priceUpdate', (prices) => {
   subscribedStocks.forEach(stock => {
     const div = document.getElementById(`stock-${stock}`);
-    if (div) div.textContent = `${stock}: $${prices[stock]}`;
+    if (div && prices[stock]) {
+      div.textContent = `${stock}: $${prices[stock]}`;
+    }
   });
 });
